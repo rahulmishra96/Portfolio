@@ -3,18 +3,20 @@ import { animate, motion } from "framer-motion";
 import TypeWriter from "typewriter-effect";
 import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
 import me from "../assets/logo.png";
+
 const Home = ({ ratio }) => {
   const clientCount = useRef(null);
   const ProjectCount = useRef(null);
+
   const animationClientsCount = () => {
-    animate(0, 100, {
+    animate(0, 2, {
       duration: 1,
       onUpdate: (v) => (clientCount.current.textContent = v.toFixed()),
     });
   };
 
   const animationProjectCount = () => {
-    animate(0, 500, {
+    animate(0, 20, {
       duration: 1,
       onUpdate: (v) => (ProjectCount.current.textContent = v.toFixed()),
     });
@@ -59,42 +61,38 @@ const Home = ({ ratio }) => {
             }}
           />
           <div>
-            <a href="mailto:rahulmishra9546@gmail.com">Hire Me</a>
+            <a href="mailto:mishrakrahul@gmail.com">Hire Me</a>
             <a href="#work">
               Projects <BsArrowUpRight />
             </a>
           </div>
           <article>
             <p>
+              <motion.span
+                ref={clientCount}
+                whileInView={animationClientsCount}
+              ></motion.span>
               +
-              {ratio < 2 && (
-                <motion.span
-                  ref={clientCount}
-                  whileInView={animationClientsCount}
-                ></motion.span>
-              )}
             </p>
-            <span>Clients Worldwide</span>
+            <span>Years of Work Experience</span>
           </article>
           <aside>
             <article>
               <p>
                 +
-                {ratio < 2 && (
-                  <motion.span
-                    ref={ProjectCount}
-                    whileInView={animationProjectCount}
-                  >
-                    500
-                  </motion.span>
-                )}
+                <motion.span
+                  ref={ProjectCount}
+                  whileInView={animationProjectCount}
+                >
+                  20
+                </motion.span>
               </p>
               <span>Projects Done</span>
             </article>
 
             <article data-special>
               <p>Contact</p>
-              <span>rahulmishra9546@gmail.com</span>
+              <span>mishrakrahul@gmail.com</span>
             </article>
           </aside>
         </div>

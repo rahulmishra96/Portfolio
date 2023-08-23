@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { AiFillIeCircle, AiFillAndroid, AiFillWindows } from "react-icons/ai";
+import { AiFillChrome } from "react-icons/ai";
+import { DiNodejs, DiReact } from "react-icons/di";
 
 const Services = () => {
   const animations = {
@@ -32,7 +33,7 @@ const Services = () => {
           whileInView={animations.whileInView}
           initial={animations.one}
         >
-          <h3>5+</h3>
+          <h3>2+</h3>
           <p>Years Experience</p>
         </motion.div>
 
@@ -41,8 +42,8 @@ const Services = () => {
           whileInView={animations.whileInView}
           initial={animations.twoAndThree}
         >
-          <AiFillIeCircle />
-          <span>Web Development</span>
+          <DiReact />
+          <span>FrontEnd Development</span>
         </motion.div>
 
         <motion.div
@@ -53,8 +54,8 @@ const Services = () => {
             delay: 0.2,
           }}
         >
-          <AiFillAndroid />
-          <span>App Development</span>
+          <DiNodejs />
+          <span>BackEnd Development</span>
         </motion.div>
 
         <motion.div
@@ -62,8 +63,8 @@ const Services = () => {
           whileInView={animations.whileInView}
           initial={animations.four}
         >
-          <AiFillWindows />
-          <span>Desktop Development</span>
+          <AiFillChrome />
+          <span>Full Stack Development</span>
         </motion.div>
       </section>
     </div>

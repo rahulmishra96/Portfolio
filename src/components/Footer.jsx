@@ -1,10 +1,10 @@
 import React from "react";
 import img from "../assets/logo.png";
 import {
-  AiFillYoutube,
   AiFillInstagram,
   AiFillGithub,
   AiOutlineArrowUp,
+  AiFillLinkedin,
 } from "react-icons/ai";
 const Footer = () => {
   return (
@@ -12,15 +12,18 @@ const Footer = () => {
       <div>
         <img src={img} alt="Founder" />
 
-        <h2>Rahul Mishra</h2>
-        <p>Motivation is temporary but discipline last forever</p>
+        <h2>Rahul Kumar Mishra</h2>
+        <p>Working as Full Stack Developer for TechFort Software Services</p>
       </div>
       <aside>
         <h2>Social Media</h2>
 
         <article>
-          <a href="https://youtube.com" target={"blank"}>
-            <AiFillYoutube />
+          <a
+            href="https://www.linkedin.com/in/rahul-mishra-4304b3164"
+            target={"blank"}
+          >
+            <AiFillLinkedin />
           </a>
           <a href="https://instagram.com/_i.rahulmishra" target={"blank"}>
             <AiFillInstagram />

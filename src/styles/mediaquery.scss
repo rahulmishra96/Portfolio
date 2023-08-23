@@ -2,6 +2,7 @@
   nav {
     padding: 0 $p_md;
   }
+
   #home {
     height: 100vh;
     > section {
@@ -13,6 +14,7 @@
       }
     }
   }
+
   #work {
     padding: 8rem $p_md;
     height: 110vh;
@@ -35,6 +37,7 @@
       }
     }
   }
+
   #services {
     padding: $p_md;
     > section {
@@ -55,6 +58,7 @@
       width: 50%;
     }
   }
+
   footer {
     padding-left: $p_md;
   }
@@ -64,6 +68,7 @@
   nav {
     padding: 0 $p_base;
   }
+
   #home {
     height: 110vh;
     > section {
@@ -73,6 +78,7 @@
           > h1 {
             font: 900 3rem $text1;
           }
+
           aside {
             width: 100%;
           }
@@ -80,9 +86,11 @@
       }
     }
   }
+
   #work {
     padding: 8rem $p_base;
   }
+
   #services {
     padding: $p_base_inverse;
     text-align: center;
@@ -99,13 +107,16 @@
       gap: 1rem;
     }
   }
+
   #home {
     > section {
       &:first-of-type {
         padding-left: $p_sm;
         > div {
-          gap: 2rem;
-          width: 100%;
+          > div {
+            gap: 2rem;
+            width: 100%;
+          }
           aside {
             flex-direction: column;
           }
@@ -113,9 +124,9 @@
       }
     }
   }
+
   #work {
     padding: 8rem $p_zero;
-
     > section {
       > article {
         height: 25rem;
@@ -125,6 +136,7 @@
       }
     }
   }
+
   #services {
     padding: $p_sm_inverse;
     height: 90vh;
@@ -139,6 +151,7 @@
       padding: 3rem;
       height: 45rem;
       justify-content: space-evenly;
+
       > article {
         width: 40%;
         height: 50%;
@@ -155,6 +168,7 @@
       width: 65%;
     }
   }
+
   footer {
     padding-left: $p_zero;
     grid-template-columns: 1fr;
@@ -220,6 +234,7 @@
               word-wrap: break-word;
             }
           }
+
           article {
             width: 100%;
             text-align: center;
@@ -230,15 +245,18 @@
           }
         }
       }
+
       &:last-of-type {
         border: none;
       }
     }
+
     > svg {
       font-size: 2rem;
       bottom: 12%;
     }
   }
+
   #work {
     > section {
       > article {
@@ -250,15 +268,18 @@
         box-shadow: 0 0 5px $color1;
         > aside {
           padding: 1rem;
+
           > h3 {
             margin: 1rem;
           }
+
           > p {
             letter-spacing: 0;
             line-height: unset;
-            margin: 0;
+            margin: 0%;
             font-size: 0.75rem;
           }
+
           > a {
             padding: 0.4rem 0.7rem;
             font-size: 0.7rem;
@@ -268,25 +289,29 @@
       }
     }
   }
+
   #timeline {
     .timelineBox::after {
       left: 31px;
     }
+
     .timelineItem {
       width: 100%;
       padding-left: 5rem;
       padding-right: 2rem;
     }
+
     .rightTimeline {
       left: 0%;
     }
-    .rightTimeline,
-    .leftTimeline {
+    .leftTimeline,
+    .rightTimeline {
       &::after {
         left: 15px;
       }
     }
   }
+
   #services {
     > section {
       margin: 3rem 0;
@@ -296,6 +321,7 @@
         grid-column: 1/3;
         grid-row: unset;
       }
+
       .serviceBox4 {
         grid-column: 1/3;
       }
@@ -304,7 +330,6 @@
   #testimonial > section {
     height: unset;
     gap: 3rem;
-    justify-content: space-evenly;
     > article {
       width: 100%;
       height: 100vw;
