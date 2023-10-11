@@ -13,7 +13,10 @@ const Footer = () => {
         <img src={img} alt="Founder" />
 
         <h2>Rahul Kumar Mishra</h2>
-        <p>Working as Full Stack Developer for TechFort Software Services</p>
+        <p>
+          Aspiring Full Stack Developer | Passionate about MERN Stack | Seeking
+          Opportunities.
+        </p>
       </div>
       <aside>
         <h2>Social Media</h2>

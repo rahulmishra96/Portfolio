@@ -9,7 +9,7 @@ const Home = ({ ratio }) => {
   const ProjectCount = useRef(null);
 
   const animationClientsCount = () => {
-    animate(0, 2, {
+    animate(0, 20, {
       duration: 1,
       onUpdate: (v) => (clientCount.current.textContent = v.toFixed()),
     });
@@ -61,7 +61,7 @@ const Home = ({ ratio }) => {
             }}
           />
           <div>
-            <a href="mailto:mishrakrahul@gmail.com">Hire Me</a>
+            <a href="mailto:rahulmishra9546@gmail.com">Hire Me</a>
             <a href="#work">
               Projects <BsArrowUpRight />
             </a>
@@ -74,7 +74,7 @@ const Home = ({ ratio }) => {
               ></motion.span>
               +
             </p>
-            <span>Years of Work Experience</span>
+            <span>Personal Project Experience</span>
           </article>
           <aside>
             <article>
@@ -92,7 +92,7 @@ const Home = ({ ratio }) => {
 
             <article data-special>
               <p>Contact</p>
-              <span>mishrakrahul@gmail.com</span>
+              <span>rahulmishra9546@gmail.com</span>
             </article>
           </aside>
         </div>
